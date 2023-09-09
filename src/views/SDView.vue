@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import config from '../../config.json';
+import axios from 'axios';
     export default {
         name: 'SDView',
         mounted() {
@@ -12,10 +12,9 @@ import config from '../../config.json';
         },
         methods: {
             setSrc() {
-                const sdUrl = config.sdUrl;
                 const sdElement = document.getElementById('SD');
                 if (sdElement) {
-                    sdElement.src = `http://${sdUrl}/?__theme=day`;
+                    sdElement.src = 'http://'+axios.defaults.baseURL+':7860/?__theme=day';
                 }
             }
         }

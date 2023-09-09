@@ -20,6 +20,7 @@
 import axios from 'axios';
 import * as echarts from 'echarts';
 import { markRaw } from 'vue';
+import config from '../../config.json';
 var interval;
 
   export default {
@@ -45,7 +46,7 @@ var interval;
         var that = this;
 
         // 服务器路径
-        axios.get('http://192.168.1.102:4560/get_temp').then(function (response) {
+        axios.get('http://'+config.apiUrl+'/get_temp').then(function (response) {
           // handle success
           console.log(response);
           that.info = response.data;

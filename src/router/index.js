@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import SDView from '../views/SDView.vue'
 import JupyView from '../views/JupyView.vue'
 import ExcelView from '../views/ExcelView.vue'
+import GridView from '../views/GridView'
 
 const routes = [
   {
@@ -37,6 +38,12 @@ const routes = [
     name: 'Excel',
     meta: {keepAlive: true},
     component: ExcelView,
+  },
+  {
+    path: '/Grid',
+    name: 'Grid',
+    meta: {keepAlive: true},
+    component: GridView,
   },
 ]
 

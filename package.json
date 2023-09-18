@@ -9,11 +9,12 @@
   },
   "dependencies": {
     "axios": "^1.4.0",
-    "core-js": "^3.8.3",
-    "echarts": "^5.4.2",
+    "core-js": "^3.32.2",
+    "echarts": "^5.4.3",
     "element-plus": "^2.3.6",
+    "jqwidgets-scripts": "^17.0.1",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3",
+    "vue-router": "^4.2.4",
     "vuex": "^4.0.0"
   },
   "devDependencies": {

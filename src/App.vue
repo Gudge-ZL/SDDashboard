@@ -104,11 +104,10 @@ nav a.router-link-exact-active {
 }
 
 .sideBar {
-  flex: 0;
   height: 100%;
-  min-width: 60px;
-  background: #42b983;
-  box-shadow: 4px 0 15px rgba(0,0,0,.25);
+  max-width: 60px;
+  background: #848484;
+  box-shadow: 4px 0 15px rgba(0,0,0,.10);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -117,9 +116,9 @@ nav a.router-link-exact-active {
 }
 
 .sideBar:hover {
-  min-width: 200px;
-  background: #2a9b68;
-  box-shadow: 2px 0 10px rgba(0,0,0,.25);
+  max-width: 200px;
+  background: rgb(60, 60, 60);
+  box-shadow: 2px 0 10px rgba(0,0,0,.10);
 }
 
 .sideBarMask {
@@ -176,10 +175,19 @@ nav a.router-link-exact-active {
 }
 
 .main {
-  flex: 1;
+  position: fixed;
+  left: 60px;
+  right: 0;
+  top: 0;
+  bottom: 0;
   flex-direction: column;
+  width: calc(100% - 60px);
   height: 100%;
   background: #fffffff8;
   z-index: 1;
+}
+
+.el-menu {
+  border-right: none !important;
 }
 </style>

@@ -23,3 +23,4 @@ pnpm-debug.log*
 *.sw?
 
 public/config/*
+public/config/config.json
